@@ -16,7 +16,7 @@ const Navbar = (props) => {
         <img src={logo} alt="logo" width={160} height={50} loading="lazy" />
       </Link>
       <nav>
-        <ul className="flex gap-3 mt-3">
+        <ul className="flex gap-3 mt-3 text-xl font-bold">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -37,16 +37,7 @@ const Navbar = (props) => {
         )}
         {!isLoggedIn && (
           <Link to="/signup">
-            <button
-              onClick={() => {
-                [
-                  setIsLoggedIn(false),
-                  toast.error("kb banega project", { position: "top-center" }),
-                ];
-              }}
-            >
-              Sign Up
-            </button>
+            <button>Sign Up</button>
           </Link>
         )}
 
@@ -54,8 +45,10 @@ const Navbar = (props) => {
           <Link to="/">
             <button
               onClick={() => {
-                setIsLoggedIn(false);
-                toast.success("Logged Out");
+                [
+                  setIsLoggedIn(false),
+                  toast.error("kb banega project", { position: "top-center" }),
+                ];
               }}
             >
               Log Out

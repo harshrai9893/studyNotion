@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
-import Dashboard from './pages/Dashboard'
+import Dashboard from './pages/Dashboard.jsx'
 import Home from './pages/Home'
 import{Routes ,Route} from 'react-router-dom'
 import { useState } from 'react'
@@ -16,9 +16,9 @@ function App() {
     <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <Routes>
         <Route path="/" element={<Home/>}   />
-        <Route path="login" element={<Login/>}   />
-        <Route path="signup" element={<Signup/>}   />
-        <Route path="dashboard" element={<Dashboard/>}   />  
+        <Route path="Login" element={<Login  setIsLoggedIn={setIsLoggedIn}/>}   />
+        <Route path="Signup" element={<Signup/>}   />
+        <Route path="Dashboard" element={<Dashboard/>}   />  
       </Routes>
     
    </div>
