@@ -2,7 +2,9 @@ import React from 'react'
 
 const Dashboard = () => {
   return (
-    <div>welcome to studynotion , hum dashboard ke under hai</div>
+    <div className='flex justify-center items-center text-white text-3xl h-full'>
+      welcome to studynotion , hum dashboard ke under hai
+      </div>
   )
 }
 
