@@ -30,7 +30,7 @@ const LoginForm = ({setIsLoggedIn}) => {
 
   return (
     <form  onSubmit={submitHandler}
-    className='flex flex-col w-full gap-y-4 mt-6'>
+    className='flex flex-col w-full gap-y-4 mt-6 '>
         <label className='w-full'>
             <p className='text-[0.875rem ] text-gray-100 mb-1 leading-[1.375rem]'>
                 Email Address<sup className='text-pink-400'>*</sup>
