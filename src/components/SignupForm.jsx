@@ -43,7 +43,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
   }
 
   return (
-    <div className='flex flex-col w-full  gap-y-4 mt-6 '>
+    <div className='flex flex-col w-full  mt-6  '>
       {/* student-- instructor tab */}
       <div className="flex  rounded-full text-gray-200 p-1 gap-x-1  max-w-max bg-gray-800  ">
         <button onClick={()=>setAccountType("student")} 

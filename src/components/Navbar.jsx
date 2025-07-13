@@ -11,6 +11,7 @@ const Navbar = (props) => {
   const notify = () => toast("Wow so easy!");
 
   return (
+    <>
     <div className="flex justify-between items-centers w-11/12 max-w-[1160px] py-4 mx-auto ">
       <Link className="" to="/">
         <img src={Logo} alt="logo" width={160} height={32} loading="lazy" />
@@ -52,7 +53,7 @@ const Navbar = (props) => {
               onClick={() => {
                 [
                   setIsLoggedIn(false),
-                  toast.error("kb banega project", { position: "top-center" }),
+                  toast.error("Log Out", { position: "top-center" }),
                 ];
               }}
             >
@@ -67,7 +68,10 @@ const Navbar = (props) => {
           </Link>
         )}
       </div>
+    
     </div>
+    <hr className="border-t border-gray-500 "/>
+    </>
   );
 };
 
